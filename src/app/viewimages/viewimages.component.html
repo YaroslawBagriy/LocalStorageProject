@@ -1,0 +1,9 @@
+<div class="container-fluid">
+	<div style="max-width: 1000px; margin: auto;">
+		<div *ngFor="let key of imageStorageKeyList" class="row">
+			<div class="col-sm-4">{{ key }}</div>
+			<img class="col-sm-6" [src]="imageStorageData[key]"/>
+			<button (click)="deleteImage(key)" type="button" class="btn btn-danger">Delete</button>
+		</div>
+	</div>
+</div>
