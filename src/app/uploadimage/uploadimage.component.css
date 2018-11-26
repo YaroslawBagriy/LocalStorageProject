@@ -1,7 +1,16 @@
-img{
-  max-width: 500px;
+img {
+ 	max-width: 500px;
 }
 
 input[type=file] {
 	padding:10px;
+}
+
+.image-preview {
+  height: 25rem;
+  margin: 1rem 0;
+}
+
+.image-preview  img {
+  height: 100%;
 }

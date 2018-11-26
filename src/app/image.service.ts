@@ -3,15 +3,18 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ImageService {
 
-  constructor() { }
+  constructor() {
 
-  // public uploadImage(image: File): Observable<Response> {
-  //   const formData = new FormData();
+  }
 
-  //   formData.append('image', image);
-    
-  // }
+  saveImage(name, image) {
+    localStorage.setItem(name, image);
+  }
 
+  deleteImage(key: string) {
+    localStorage.removeItem(key);
+  }
 }
